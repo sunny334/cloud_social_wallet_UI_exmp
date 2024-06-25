@@ -1,0 +1,41 @@
+.button {
+    display: flex;
+    padding: 7px 13px;
+    text-transform: none;
+    transition: all .15s ease;
+    letter-spacing: .025em;
+    font-size: .875rem;
+    font-weight: bold;
+    will-change: transform;
+    color: black;
+    background-color: #b0f49f;
+    border: 2px solid #b0f49f;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+
+    & :disabled, .disabled {
+        cursor: not-allowed;
+        opacity: 0.6;
+        display: none;
+    }
+
+    &:hover {
+        color: black;
+        background-color: #bdf3b0;
+        border-color: #bdf3b0;
+    }
+}
+
+.outline {
+    color: #b0f49f;
+    background-color: transparent;
+    border: 2px solid #b0f49f;
+
+    &:hover {
+        color: black;
+        background-color: #b0f49f !important;
+        border-color: #b0f49f;
+    }
+}

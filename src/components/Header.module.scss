@@ -1,0 +1,76 @@
+.card {
+  display: flex;
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+}
+
+.wallet {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainButtons {
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+  width: 100%;
+
+  .button {
+    display: flex;
+    margin: 0 5px;
+  }
+  & > *{
+    margin: 5px 0px;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.balance {
+  font-size: 17px;
+  color: #5e72e4;
+}
+
+.logout {
+  color: #bd6c6c !important;
+  padding: 5px 10px !important;
+  font-size: 12px !important;
+  margin-top: 20px;
+  background-color: white !important;
+  border: transparent !important;
+}
+
+.logout:hover {
+  color: #750b0b !important;
+  font-weight: bolder;
+}
+
+.amount {
+  color: rgb(82, 95, 127);
+  font-weight: bold;
+}
+
+.address {
+  color: rgb(82, 95, 127);
+  opacity: 0.8;
+  cursor: pointer;
+}
