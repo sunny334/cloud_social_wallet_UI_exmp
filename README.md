@@ -10,7 +10,7 @@ import {WalletProvider} from "cloud-social-wallet";
 
 function App() {
     return (
-        <WalletProvider config={{rpc: '', backend_url: '', prefix: 'juno'}}>
+        <WalletProvider config={{rpc: '', backend_url: '', prefix: 'loop'}}>
             <WalletApp/>
         </WalletProvider>
     )
@@ -31,7 +31,6 @@ function WalletApp() {
                     <button onClick={logout}>Disconnect</p>
                 </> : <>
                     <button onClick={() => login('google')}>Google Login</button>
-                    <button onClick={() => login('facebook')}>Facebook Login</button>
                 </>
             }
         </>
